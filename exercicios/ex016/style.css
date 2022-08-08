@@ -1,0 +1,28 @@
+body {
+  background-color: white;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    background-color: red;
+    font-size: 20pt;
+}
+.primeiro {
+    background-color: black;
+}
+.segundo {
+    background-color: #103778;
+}
+.terceiro {
+    background-color:hsl(980, 100%, 50%); color: hsl(0, 0%, 100%);
+}
+.quarto {
+    background-color:rgb(90, 0, 0);
+}
+.quinto {
+    background-color:rgba(83, 20, 20, 0.705);
+}
+.sexto {
+    background: linear-gradient(15deg,black 10%, blue 65%,rgb(141, 53, 141));
+    
+}

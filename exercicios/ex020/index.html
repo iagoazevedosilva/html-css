@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited{
+            color: rgb(100, 1, 1);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .link:hover {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+      
+        .link::before {
+            content: '>>';
+            font-weight: lighter;
+        }
+
+        .link::after {
+            content: '<<';
+            font-weight: lighter;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <p>Para conhecer minha loja como divulgador, acesse <a href="#" class="link">Magazine5iago</a>
+    </p>
+
+    <p>Para me conhecer melhor, acesse minhas <a href="#" >redes sociais</a>
+    </p>
+
+    <p>Para aprender Html e Css com propriedade, acesse   <a href="#">Curso em Vídeo</a>
+    </p>
+    
+</body>
+</html>

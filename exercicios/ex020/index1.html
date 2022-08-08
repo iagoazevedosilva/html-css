@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Personalizando</title>
+
+    <style>
+        div > p{
+            display: none;
+        }
+        /*essa declaração 'display' fez com que o elemento ficasse oculto na tela, nesse cód que criei. Embaixo, com a a config 'block' da declaração 'display', eu faço com que a palavra só apareça depois de alguns passos.*/
+
+        div:hover >p {
+            display: block;
+            background-color: rgb(61, 168, 57);
+        }
+        /*o sinal de > serve para indicar os filhos de um elemento. Ex: o 'p' é o filho da tag 'div'*/
+
+        div#cupom > p {
+            display:none;
+        }
+
+        div#cupom:hover > p {
+            display: block;
+            background-color: yellow;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            width: 15%;
+            text-align:center;
+        }
+        /*posso colocar o nome da tag junto com o 'id'*/
+
+        a {
+            color: black;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Conteúdo Especial</h1>
+    <div>
+        Passe o mouse aqui
+        <p>SURPREESAAA!!</p>
+    </div>
+        <p>Veja o conteúdo oculto aparecendo</p>
+
+    <div id="cupom">
+        Cupom de desconto aqui
+        <p><a href="#">IAGO50</a></p>
+
+    </div>
+</body>
+</html>

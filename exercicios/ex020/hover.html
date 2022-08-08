@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com Hover</title>
+    
+    <style>
+        body {
+            background-color: burlywood;
+            font: normal normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+        display: block;
+        background-color: rgba(235, 219, 83, 0.705);
+        height: 30px;
+        width: 150px;
+        border-radius: 4px;
+        text-align: center;
+        }
+
+        a {
+            color: rgb(255, 0, 0);   
+            text-decoration: none;       
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com Hover</h1>
+    <h2>Como esconder um elemento usando hover?</h2>
+    
+    <div>
+        Passe o mouse aqui
+        <p>Olá, Mundo!</p>
+    </div>
+    <p>Observe que a palavra aparece quando eu passo o mouse por cima usando a pseudo-class 'hover'</p>
+  
+
+    <div>
+        Passe o mouse aqui
+        <p>
+            <a href="https://www.parceiromagalu.com" target="_blank">Magazine5iago</a>
+        </p>
+    </div>
+
+    <p>Observe que a palavra aparece quando eu passo o mouse por cima usando a pseudo-class 'hover', mesmo contendo um link. Posso mudar a cor do link também.</p>
+
+    
+</body>
+</html>
