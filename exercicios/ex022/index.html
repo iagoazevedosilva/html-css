@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-image: url('https://th.bing.com/th/id/OIP.i53-VSdMaV8ROhMuks3zkQHaE8?pid=ImgDet&rs=1'); */
+            /* background-repeat: no-repeat;    */
+            /* background-size: auto;      */
+
+            /*shorthand para background*/
+
+            background: black url('https://mar-azul.com.ar/sites/default/files/img_4611.jpg')center no-repeat fixed;
+        }
+
+        div.square {   
+            display:inline-block;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        div#q1 {
+            background-color: lightgrey;
+        }
+        div#q2 {
+            background-image:linear-gradient(to bottom,yellow, orange);
+        }
+        div#q3 {
+            background-image:url('https://1.bp.blogspot.com/-MV6IKLm75Uc/XYwmedXUHII/AAAAAAAAcWc/Ejt80yXU7m4nVoZh8PotxkSOwRZAYZ6_gCLcBGAsYHQ/s2560/kluane-lake-2880x1800-mountains-landscape-yukon-canada-5k-18732.jpg');
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="square" id="q1">1</div>
+    <div class="square" id="q2">2</div>
+    <div class="square" id="q3">3</div>
+
+
+</body>
+</html>
